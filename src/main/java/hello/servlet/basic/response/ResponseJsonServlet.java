@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.concurrent.ConcurrentHashMap;
 
 @WebServlet(name = "responseJsonServlet", urlPatterns = "/response-json")
 public class ResponseJsonServlet extends HttpServlet {
@@ -19,7 +20,7 @@ public class ResponseJsonServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");
         response.setCharacterEncoding("utf-8");
-
+        ConcurrentHashMap
         HelloData helloData = new HelloData();
         helloData.setUsername("kim");
         helloData.setAge(20);
