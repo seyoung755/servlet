@@ -20,7 +20,6 @@ public class ResponseJsonServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");
         response.setCharacterEncoding("utf-8");
-        ConcurrentHashMap
         HelloData helloData = new HelloData();
         helloData.setUsername("kim");
         helloData.setAge(20);
